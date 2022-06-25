@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+
+
+  <title>Página de cadastro de clientes</title>
+</head>
+<body>
+
+<div class="container">
+  <form name="FormularioCadastro"  method="POST" action="../src/cadastrar.php">
+    <h1>Cadastre-se para acessar o sistema</h1>
+
+    <label for="nome">Nome*</label>
+    <input  type="tel" id="nome" placeholder="Fulano de tal" required maxlength="100"
+     name="nome" />
+    <br>
+    <label for="usuario">Usuario*</label>
+    <input  type="tel" id="usuario" placeholder="Crie um nome de usuario" required maxlength="100"
+     name="usuario" />
+    <br>
+    
+    <label for="telefone">Fone*</label>
+    <input  type="tel"   id="telefone" placeholder="(xx)xxxx-xxxx" name="telefone" maxlength="16" required />
+    <br>
+
+    <label for="email">E-mail*</label>
+    <input  type="email" id="email" placeholder="inserir e-mail" minlength="2" name="email"required="@" />
+    <br>
+
+    <label for="senha">Senha *</label>
+    <input  type="password" id="senha" placeholder="Crie sua senha" name="senha" required name="senha">
+    <br>
+    
+    <input type="submit" class="enviar" onclick="Enviar();" value="Cadastrar"  />
+    <a class="home" href="../src/home.php">HOME</a>
+  </form>
+  
+  <p class="error-validation template"></p>
+</div>
+
+
+</body>
+</html>
